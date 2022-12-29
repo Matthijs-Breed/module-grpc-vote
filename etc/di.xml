@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Experius\GrpcVote\Api\VotingClientInterface"
+                type="Experius\GrpcVote\Service\VotingClient"/>
+
+
+    <type name="Experius\GrpcVote\Service\VotingClient">
+        <arguments>
+            <argument name="hostname" xsi:type="string">[::1]:50051</argument>
+        </arguments>
+    </type>
+</config>

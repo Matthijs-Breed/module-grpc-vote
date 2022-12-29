@@ -1,0 +1,25 @@
+{
+    "name": "experius/module-grpc-vote",
+    "version": "1.0.0",
+    "description": "N/A",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*",
+        "ext-grpc": "*"
+    },
+    "license": [
+        "Proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registrationzzz.php"
+        ],
+        "psr-0": {
+            "Voting\\": "Generated/Voting",
+            "GPBMetadata\\": "Generated/GPBMetadata"
+        },
+        "psr-4": {
+            "Experius\\GrpcVote\\": ""
+        }
+    }
+}
