@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "files": [
-            "registrationzzz.php"
+            "registration.php"
         ],
         "psr-0": {
             "Voting\\": "Generated/Voting",
